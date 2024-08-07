@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3494e4;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+.cup {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  height: 95px;
+  width: 50px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-siz@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  h4 {
+    font-size: 20px;
+    margin: 5px;
+    text-transform: uppercase;
+  }
+  
+  .counter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .counter.hide {
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide 0.2s ease-out;
+  }
+  
+  @keyframes hide {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+  
+  .final {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+  }
+  
+  .final.show {
+    transform: translate(-50%, -50%) scale(1);
+    animation: show 0.2s ease-out;
+  }
+  
+  @keyframes show {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    33% {
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  .nums {
+    color: #3498db;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 50px;
+  }
+  
+  .nums span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(120deg);
+    transform-origin: bottom center;
+  }
+  
+  .nums span.in {
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: goIn 0.5s ease-in-out;
+  }
+  
+  .nums span.out {
+    animation: goOut 0.5s ease-in-out;
+  }
+  
+  @keyframes goIn {
+    0% {
+      transform: translate(-50%, -50%) rotate(120deg);
+    }
+    30% {
+      transform: translate(-50%, -50%) rotate(-20deg);
+    }
+    60% {
+      transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  
+  @keyframes goOut {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    60% {
+      transform: translate(-50%, -50%) rotate(20deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-120deg);
+    }
+  }
+  
+  #replay {
+    background-color: #3498db;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }e: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  height: 0;
+  transition: 0.3s ease;
+}
